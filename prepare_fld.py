@@ -144,7 +144,7 @@ def write_fld(obs_date, field, tile, centre, targets, guides, sky):
 
 if __name__ == "__main__":
 
-	obs_date = ["2023 07 07", "2023 07 07"]
+	obs_date = ["2023 07 07", "2023 07 08"]
 
 	# A list of GW tiles we want to run this for as a set of
 	# sub-dictionaries indexed first by observation date, then
