@@ -142,7 +142,7 @@ def write_fld(obs_date, field, tile, centre, targets, guides, sky):
 
 	return
 
-if __name__ == "__main__":
+def prepare_july23():
 
 	obs_date = ["2023 07 07", "2023 07 08"]
 
@@ -164,6 +164,30 @@ if __name__ == "__main__":
 					centre, targets = get_field(field, tile)
 					guides, sky = get_guides_sky(field, tile)
 					write_fld(obs_date, field, tile, centre, targets, guides, sky)
+
+def prepare_oct23():
+
+	obs_date = ["2023 10 21"]
+
+	# A list of GW tiles we want to run this for as a set of
+	# sub-dictionaries indexed first by observation date, then
+	# by field name
+	fields = {"2023 10 21": {"GW190814_2": ["A", "B", "C", "D", "E", "F"], 
+	 		  		 		 "s191204r": ["A", "B", "C"]}}
+
+	# Loop over fields and central coordinates, get the data and write the fld file
+	for obs_date in fields:
+		for field in fields[obs_date]:
+				for tile in fields[obs_date][field]:
+					print(obs_date, field, tile)
+					centre, targets = get_field(field, tile)
+					guides, sky = get_guides_sky(field, tile)
+					write_fld(obs_date, field, tile, centre, targets, guides, sky)
+
+if __name__ == "__main__":
+
+	#prepare_july23()
+	prepare_oct23()
 
 
 
