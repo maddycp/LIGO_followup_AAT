@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!DOCTYPE VOTABLE SYSTEM "http://us-vo.org/xml/VOTable.dtd">
+<VOTABLE ID="v1.0">
+<RESOURCE name="Observation_Group">
+<TABLE ID="Observation_Group">
+<DESCRIPTION> This is a subset of images
+belonging to a survey, an experiment,
+and organised according to the same
+common criterion. e.g. exemple of
+criterion: color or wavelength,
+polarimetry, etc... exemple of
+Observation_Group: POSSII band J,
+DENIS band K, etc..
+</DESCRIPTION>
+<FIELD ID="Selection_Criterion" name="Selection_Criterion" datatype="char">
+<DESCRIPTION> Sampled Parameter
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="Selection-Range" name="Selection-Range" datatype="char">
+<DESCRIPTION> Constraint on sampled parameter
+</DESCRIPTION>
+</FIELD>
+<DATA><TABLEDATA>
+</TABLEDATA></DATA>
+</TABLE>
+<RESOURCE name="Observation">
+<TABLE ID="Observation">
+<DESCRIPTION>
+This resource describes list of processed observations 
+</DESCRIPTION>
+<FIELD ID="Observation_Name" name="Observation_Name" datatype="char" ucd="ID_IMAGE">
+<DESCRIPTION>
+Name of the Observation
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="ReferenceNumber" name="ReferenceNumber" datatype="char" ucd="ID_IMAGE">
+<DESCRIPTION>
+Reference Number of the Image
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="Size_alpha" name="Size_alpha" datatype="float" precision="7" width="11" unit="deg" ucd="INST_DET_SIZE">
+<DESCRIPTION>
+Observation range in alpha (angular) 
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="Size_delta" name="Size_delta" datatype="float" precision="F7" width="11" unit="deg" ucd="INST_DET_SIZE">
+<DESCRIPTION>
+Observation range in delta (angular) 
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="PixelSize" name="Angular Pixel Size"  datatype="float" unit ="deg">
+<DESCRIPTION>
+Pixel size measured in sky units
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="Origin" name="Origin" datatype="char">
+<DESCRIPTION>
+Data provider references
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="OriginalCoding " name="OriginalCoding" datatype="char">
+<DESCRIPTION>
+Image coding provided by the data producer
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="AvailableCodings" name="AvailableCodings" datatype="char">
+<DESCRIPTION>
+Codings which may be  produced on the fly
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="alpha" name="CentralPoint_RA" ucd="POS_EQ_RA_MAIN"  datatype="float" precision="F7" width="11" unit="deg">
+<DESCRIPTION>
+Position of center	
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="delta" name="CentralPoint_DEC" ucd="POS_EQ_DEC_MAIN"  datatype="float" precision="F7" width="11" unit="deg">
+<DESCRIPTION>
+Position of center	
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="date"  name="DateAndTime" datatype="char">
+<DESCRIPTION>
+Observation date
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="AP" name="Position Angle"  datatype="float" precision="F7"  width="11" unit="deg">
+<DESCRIPTION>
+Position Angle of th Y axis
+</DESCRIPTION>
+</FIELD>
+<DATA><TABLEDATA>
+</TABLEDATA></DATA>
+</TABLE>
+</RESOURCE>
+<RESOURCE name="StorageMapping">
+<TABLE ID="StorageMapping">
+<DESCRIPTION>
+This resource describes list of processed observations 
+</DESCRIPTION>
+<FIELD ref="Observation_Name" >
+</FIELD>
+<FIELD ID="Cutout" name="Organisation"  datatype="char">
+<DESCRIPTION>
+Status of cutout availability 
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="number" name="NumberOfPatches"  datatype="int">
+<DESCRIPTION>
+Number of subimages
+</DESCRIPTION>
+</FIELD>
+<FIELD ID="size" name="Maximum size"  datatype="int">
+<DESCRIPTION>
+Maximum size 
+</DESCRIPTION>
+</FIELD>
+<DATA><TABLEDATA>
+</TABLEDATA></DATA>
+</TABLE>
+</RESOURCE>
+<RESOURCE name="StoredImage">
+<TABLE ID="StoredImage">
+<DESCRIPTION>
+This resource describes the actual retrieved file 
+</DESCRIPTION>
+<FIELD ref="Observation_Name" >
+</FIELD>
+<FIELD ID="Location" name="LinktoPixels" datatype="char">
+<DESCRIPTION>
+File location
+</DESCRIPTION>
+</FIELD>
+<DATA><TABLEDATA>
+</TABLEDATA></DATA>
+</TABLE>
+</RESOURCE>
+</RESOURCE>
+</VOTABLE>
