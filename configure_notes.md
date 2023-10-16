@@ -37,3 +37,15 @@
 * Tile 2: Looks good.
 * Tile 3: Looks good.
  
+###GW190814_v2
+* Tile A: Looks good.
+* Tile B: Looks good.
+* Tile C: Only 5 fiducials when configured on Plate 0. 7 fiducials on Plate 1, so ideally configure on Plate 1.
+* Tile D: Looks good.
+* Tile E: Looks good.
+* Tile F: Looks good.
+
+###S191204r
+* Tile A: Only 5 fiducials when configured on Plate 0. 6 fiducials on Plate 1, so ideally configure on Plate 1.
+* Tile B: Needs more stars. Only 4 configured on Plate 0 and 5 on Plate 1.
+* Tile C: Looks good.
