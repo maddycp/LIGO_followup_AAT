@@ -47,5 +47,5 @@
 
 ###S191204r
 * Tile A: Only 5 fiducials when configured on Plate 0. 6 fiducials on Plate 1, so ideally configure on Plate 1.
-* Tile B: Needs more stars. Only 4 configured on Plate 0 and 5 on Plate 1.
+* Tile B: Only 5 fiducials when configured on Plate 0. 6 fiducials on Plate 1, so ideally configure on Plate 1.
 * Tile C: Looks good.
