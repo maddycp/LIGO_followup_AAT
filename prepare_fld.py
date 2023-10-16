@@ -172,7 +172,7 @@ def prepare_oct23():
 	# A list of GW tiles we want to run this for as a set of
 	# sub-dictionaries indexed first by observation date, then
 	# by field name
-	fields = {"2023 10 21": {"GW190814_2": ["_A", "_B", "_C", "_D", "_E", "_F"], 
+	fields = {"2023 10 21": {"GW190814_v2": ["_A", "_B", "_C", "_D", "_E", "_F"], 
 	 		  		 		 "S191204r": ["_A", "_B", "_C"]}}
 
 	# Loop over fields and central coordinates, get the data and write the fld file
