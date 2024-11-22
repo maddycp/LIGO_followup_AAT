@@ -17,7 +17,7 @@ from astropy.coordinates import Angle, Latitude, Longitude  # Angles
 from astropy.coordinates import ICRS, Galactic, FK4, FK5  # Low-level frames
 import astropy.units as u
 from matplotlib.colors import LinearSegmentedColormap
-
+#%%
 GW190814tile0 = pd.read_csv('GW190814_tile0_runGW01_v18_08.txt', sep=',', header = 0)
 GW190814tile0.columns = GW190814tile0.columns.str.strip()
 GW190814tile0['RA'] = GW190814tile0['RA'].multiply(180/np.pi)
